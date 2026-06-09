@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { execFile } from "node:child_process";
@@ -23,7 +24,7 @@ async function runAppleScript(script: string): Promise<string> {
 
 const server = new McpServer({
   name: "finder-mcp-server",
-  version: "1.0.0",
+  version: "1.0.1",
 });
 
 // ─── Tools ────────────────────────────────────────────────────────────────────
